@@ -8,8 +8,8 @@ let package = Package(
     platforms: [.iOS(.v11), .macOS(.v10_13), .tvOS(.v11), .watchOS(.v4)],
     products: [
         .library(
-            name: "SentryLogHandler",
-            targets: ["swift-log-sentry"]
+            name: "LoggingSentry",
+            targets: ["LoggingSentry"]
         )
     ],
     dependencies: [
@@ -18,16 +18,16 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "swift-log-sentry",
+            name: "LoggingSentry",
             dependencies: [
                 .product(name: "Logging", package: "swift-log"),
                 .product(name: "Sentry", package: "sentry-cocoa"),
             ]
         ),
         .testTarget(
-            name: "swift-log-sentryTests",
+            name: "LoggingSentryTests",
             dependencies: [
-                "swift-log-sentry",
+                "LoggingSentry",
                 .product(name: "Logging", package: "swift-log"),
                 .product(name: "Sentry", package: "sentry-cocoa"),
             ]

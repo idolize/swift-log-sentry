@@ -2,9 +2,9 @@ import Logging
 import Sentry
 import XCTest
 
-@testable import swift_log_sentry
+@testable import LoggingSentry
 
-final class swift_log_sentryTests: XCTestCase {
+final class LoggingSentryTests: XCTestCase {
     func test_Integration() {
         var breadcrumb: Breadcrumb?
         let mockClient = BreadcrumbTracker { crumb in

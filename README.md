@@ -22,17 +22,17 @@ Before using the logger you need to initialize the Sentry SDK.
 
 #### Adding the dependency
 
-`SwiftLogSentry` is designed for Swift 5. To use the handler, you need to declare your dependency in your `Package.swift`:
+`SwiftLogSentry` is designed for Swift 5+. To use the handler, you need to declare your dependency in your `Package.swift`:
 
 ```swift
 .package(url: "https://github.com/idolize/swift-log-sentry.git", from: "2.0.0"),
 ```
 
-and to your application/library target, add `"SentryLogHandler"` to your `dependencies`, e.g. like this:
+and to your application/library target, add `"LoggingSentry"` to your `dependencies`, e.g. like this:
 
 ```swift
 .target(name: "BestExampleApp", dependencies: [
-    .product(name: "SentryLogHandler", package: "swift-log-sentry")
+    .product(name: "LoggingSentry", package: "swift-log-sentry")
 ],
 ```
 
