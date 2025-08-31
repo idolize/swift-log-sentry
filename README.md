@@ -2,9 +2,9 @@
 
 Updated by [David Idol](https://github.com/idolize) to support the latest Sentry and swift-log library versions.
 
-[![Build & Test](https://github.com/ericlewis/swift-log-sentry/actions/workflows/ci.yml/badge.svg)](https://github.com/ericlewis/swift-log-sentry/actions/workflows/ci.yml)
-[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fericlewis%2Fswift-log-sentry%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/ericlewis/swift-log-sentry)
-[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fericlewis%2Fswift-log-sentry%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/ericlewis/swift-log-sentry)
+[![Build & Test](https://github.com/idolize/swift-log-sentry/actions/workflows/ci.yml/badge.svg)](https://github.com/idolize/swift-log-sentry/actions/workflows/ci.yml)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fidolize%2Fswift-log-sentry%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/idolize/swift-log-sentry)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fidolize%2Fswift-log-sentry%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/idolize/swift-log-sentry)
 
 A [Sentry](https://sentry.com) logging backend for [SwiftLog](https://github.com/apple/swift-log), 
 it works by creating and adding a [Breadcrumb](https://docs.sentry.io/platforms/apple/guides/ios/enriching-events/breadcrumbs/) for log events.
@@ -25,7 +25,7 @@ Before using the logger you need to initialize the Sentry SDK.
 `SwiftLogSentry` is designed for Swift 5. To use the handler, you need to declare your dependency in your `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/ericlewis/swift-log-sentry.git", from: "0.1.0"),
+.package(url: "https://github.com/idolize/swift-log-sentry.git", from: "2.0.0"),
 ```
 
 and to your application/library target, add `"SentryLogHandler"` to your `dependencies`, e.g. like this:
